@@ -1,5 +1,5 @@
 PKG_NAME := pylama
-URL = https://files.pythonhosted.org/packages/7a/aa/2d16865086c15498bc70dea1dfa415032c491938414e9b7f2a140062075c/pylama-7.6.4.tar.gz
+URL = https://files.pythonhosted.org/packages/83/42/e51ccd7235e95e342f5c4df5d9cf05b42aa307932d838674d6b1c16909c5/pylama-7.6.5.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
