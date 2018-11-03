@@ -4,7 +4,7 @@
 #
 Name     : pylama
 Version  : 7.6.6
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/a7/f1/c668760a25e9382e71009e7c98b687ec32068462bdfa8179764cd14c1071/pylama-7.6.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a7/f1/c668760a25e9382e71009e7c98b687ec32068462bdfa8179764cd14c1071/pylama-7.6.6.tar.gz
 Summary  : pylama -- Code audit tool for python
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541257391
+export SOURCE_DATE_EPOCH=1541258505
 python3 setup.py build
 
 %install
@@ -94,4 +94,6 @@ echo ----[ mark ]----
 
 %files python3
 %defattr(-,root,root,-)
+%exclude /usr/lib/python3.7/site-packages/tests/__init__.py
+%exclude /usr/lib/python3.7/site-packages/tests/__pycache__/__init__.cpython-37.pyc
 /usr/lib/python3*/*
